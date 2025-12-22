@@ -12,9 +12,10 @@ This project is a quickstart template to run locally or with 3rd party integrati
 - 💬 **LLM Integration**: Use local LLaMA models or connect to AWS/ OpenAI / Anthropic APIs.
 - 🧪 **Local Dev**: Run everything locally with Docker Compose or Python virtual env.
 
-THERE ARE 2 IMPLEMENTATIONS OF THE AI AGENT:
+THERE ARE 3 IMPLEMENTATIONS OF THE AI AGENT:
+- [basic.py](./agent-worker/basic.py) using 3rd party services (Groq LLM, Deepgram STT, Groq TTS) with complete metrics capture in place.
 - [fast-preresponse.py](./agent-worker/fast-preresponse.py) using 3rd party services and the complete metrics capture in place.
-- [fast-preresponse-ollama.py](./agent-worker/fast-preresponse-ollama.py) which is only using open source souftware and can run locally without internet.
+- [fast-preresponse-ollama.py](./agent-worker/fast-preresponse-ollama.py) which is only using open source software and can run locally without internet.
 
 Just update [Dockerfile](./agent-worker/Dockerfile) to use one or another. More info [here](./agent-worker/README.md).
 
